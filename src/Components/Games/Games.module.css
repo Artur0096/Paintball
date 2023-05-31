@@ -1,0 +1,122 @@
+.games{
+    background-color: #34313F;
+}
+.games_container{
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.games_blocks{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.games_block{
+    width: 100%;
+    max-width: 335px;
+    text-align: center;
+}
+.block_header{
+    background-color: white;
+}
+.block_header h3{
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.block_price{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #2DB9C5;
+
+}
+.block_price h2{
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+.block_price span{
+    color: white;
+}
+
+.block_features{
+    background-color: #292633;
+}
+.features_list{
+    padding-top: 45px;
+}
+.features_list ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.features_list ul li{
+    color: #69806C;
+    border-bottom: 1px solid #69806C;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+.features_list ul li:last-child{
+    border: none;
+}
+.block_features_button{
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
+.block_features_button button{
+    padding: 15px 55px;
+    background-color: #292633;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1500px){
+    .games_container{
+        width: 100%;
+    }
+    .games_blocks{
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .games_blocks{
+        max-width: 100%;
+    }
+    .games_block{
+        max-width: 290px;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .games_blocks{
+        display: block;
+    }
+    .games_block{
+        max-width: 330px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .games_block{
+        max-width: 100%;
+    }
+}

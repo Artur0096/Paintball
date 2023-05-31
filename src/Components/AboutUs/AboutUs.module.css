@@ -1,0 +1,248 @@
+.aboutUs{
+    background-color: #34313F;
+}
+
+.aboutUs_container{
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 65px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.aboutUs_sides{
+    display: flex;
+    padding-top: 150px;
+    flex-wrap: wrap;
+    
+}
+.aboutUs_leftSide{
+    flex: 70%;
+    margin-right: 25px;
+}
+.aboutUs_title{
+    margin-bottom: 70px;
+}
+.aboutUs_title h1{
+   color: rgb(221, 60, 77);
+   text-transform: uppercase;
+   line-height: 5px;
+   font-size: 45px;
+}
+.aboutUs_title h2{
+   color: #7F7F7F;
+   text-transform: uppercase;
+   font-size: 45px;
+   line-height: 5px;
+}
+.aboutUs_text{
+    max-width: 950px;
+    width: 100%;
+    border-bottom: 2px solid #7F7F7F;
+    padding-bottom: 45px;
+    margin-bottom: 25px;
+}
+.aboutUs_text p{
+    color: #7F7F7F;
+    font-size: 19px;
+    max-width: 850px;
+}
+.aboutUs_rightSide{
+    flex: 25%;
+    margin-right: 45px;
+}
+.aboutUs_form{
+    width: 319px;
+    background-color: #292633;
+}
+.aboutUs_form_title{
+    background-color: rgb(221, 60, 77);
+    text-align: center;
+
+}
+.aboutUs_form_title p{
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+.aboutUs_reasons{
+    display: flex;
+    margin-top: 75px;
+}
+
+.aboutUs_reasons p{
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+    max-width: 220px;
+    margin:0;
+    margin-top: 10px;
+}
+.aboutUs_reasons img{
+    margin-right: 10px;
+}
+.aboutUs_like{
+    display: flex;
+    align-items: top;
+    margin-right: 40px;
+}
+
+.aboutUs_form form{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 80px;
+}
+.aboutUs_form input{
+    display: block;
+    background-color: #34313F;
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    padding-top: 5px;
+    height: 45px;
+    margin-bottom: 15px;
+    outline: none;
+    color: white;
+    padding-left: 15px;
+}
+
+.aboutUs_form input::placeholder{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.aboutUs_form textarea{
+    display: block;
+    background-color: #34313F;
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    outline: none;
+    height: 100px;
+    color: white;
+    height: 80px;
+    padding-left: 15px;
+}
+.aboutUs_form textarea::placeholder{
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+.aboutUs_form form div{
+    margin-bottom: 7px;
+}
+
+.aboutUs_form input[type=submit]{
+    background-color: #292633;
+    border: 2px solid white;
+    padding-top: 15px;
+    padding-bottom: 37px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.aboutUs_form input[type=submit]:hover{
+    background-color: rgb(221, 60, 77);
+    color: white;
+    border: none;
+    padding-top: 17px;
+    padding-bottom: 39px;
+}
+
+@media only screen and (max-width: 1500px){
+    .aboutUs_container{
+        max-width: 100%;
+    }
+    .aboutUs_leftSide{
+        flex: 60%;
+    }
+    .aboutUs_reasons p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .aboutUs_leftSide{
+        flex: 40%;
+    }
+    .aboutUs_reasons p{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px){
+
+    .aboutUs_container{
+        padding-left: 15px;
+    }
+    .aboutUs_sides{
+        display: block;
+        padding-top: 25px;
+    }
+    .aboutUs_leftSide{
+        margin-right: 0;
+    }
+    .aboutUs_rightSide{
+        flex: none;
+        margin-top: 45px;
+        padding-bottom: 25px;
+    }
+    .aboutUs_form form{
+        margin-bottom: 0;
+    }
+    .aboutUs_form{
+        margin: 0 auto;
+    }
+    .aboutUs_rightSide{
+        margin-right: 0;
+    }
+    .aboutUs_reasons{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .aboutUs_like{
+        margin-right: 0;
+        width: 345px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .aboutUs_reasons p{
+        max-width: none;
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .aboutUs_reasons img{
+        width: 34px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .aboutUs_reasons img{
+        width: 20px;
+    }
+    .aboutUs_reasons{
+        margin-left: 0;
+    }
+    .aboutUs_reasons p{
+        font-size: 12px;
+        max-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .aboutUs_reasons p{
+        font-size: 10px;
+        max-width: 100px;
+    }
+}

@@ -1,0 +1,164 @@
+.Contacts{
+    background-image: url("/public/images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contacts_container{
+
+}
+.Contacts_background{
+    background-color: rgba(41,38,51,0.7);
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+.Contacts_list{
+    
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.adrees_info h2{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.adrees_info_lines{
+    margin-top: 45px;
+}
+.adrees_info_lines span{
+    font-size: 18px;
+}
+
+.adrees_info_lines div{
+    margin-bottom: 35px;
+    color: white;
+}
+
+.workTime_info{
+    margin-left: 85px;
+}
+
+.workTime_info h2{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 30px;
+}
+
+.workTime_days_week{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding-bottom: 35px;
+}
+.workTime_days_week p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+.workTime_days_saturday{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding-bottom: 35px;
+    padding-top: 25px;
+}
+.workTime_days_saturday p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.workTime_days_sunday{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding-bottom: 35px;
+    padding-top: 25px;
+}
+
+.workTime_days_sunday p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+.social_network{
+    margin-left: 4%;
+    align-self: flex-end;
+
+}
+.social_network h2{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.social_network_icons{
+
+}
+.social_network_icons ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1500px){
+
+    .Contacts_list iframe{
+        width: 450px;
+    }
+    .Contacts_list{
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: nowrap;
+    }
+    .social_network_icons ul{
+        flex-wrap: nowrap;
+    }
+}
+@media only screen and (max-width: 1200px){
+    
+    .workTime_info{
+        margin-left: 0;
+        width: 80%;
+    }
+    .social_network{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 800px){
+    .Contacts_list{
+        display: block;
+    }
+}
+@media only screen and (max-width: 700px){
+    .social_network h2{
+        font-size: 25px;
+    }
+    .workTime_info p{
+        font-size:17px;
+    }
+    .workTime_info h2{
+        font-size: 25px;
+    }
+    .Contacts_list iframe{
+        width: 350px;
+    }
+    .Contacts_background{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}

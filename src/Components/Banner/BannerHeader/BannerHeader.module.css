@@ -1,0 +1,114 @@
+.BannerHeader{
+    width: 100%;
+    background-color: rgba(41,38,51,0.7);
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.BannerHeader_container{
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.BannerHeader_elements{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.BannerHeader_logo{
+    flex: 25%;
+}
+.BannerHeader_info{
+    flex: 60%;
+}
+.BannerHeader_info_list{
+
+}
+.BannerHeader_info_list ul{
+    list-style-type: none;
+    display: flex;
+}
+.BannerHeader_info_list ul li{
+    margin-right: 45px;
+    color: white;
+    text-decoration: none;
+}
+.BannerHeader_info_list ul li img{
+    display: inline-block;
+    padding-top: 2px;
+    margin-right: 10px;
+}
+.BannerHeader_socialSecond ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.BannerHeader_socialSecond ul li a:hover{
+    color: red;
+    cursor: pointer;
+}
+.BannerHeader_info_list ul li div{
+    display: inline-block;
+}
+.BannerHeader_info_list ul li span{
+    color: #dd3c4d;
+    font-size: 16px;
+}
+.BannerHeader_info_list ul li p{
+    font-size: 23px;
+    color: #ffffff;
+    font-family: "Arial";
+    margin: 0;
+    margin-top: 8px;
+}
+
+.BannerHeader_social{
+    flex: 13%;
+}
+
+@media only screen and (max-width: 1200px)  {
+    .BannerHeader_container{
+        max-width: 100%;
+    }
+    .BannerHeader_logo{
+        flex:14%;
+    }
+}
+
+.BannerHeader_socialSecond{
+    position: relative;
+}
+
+.BannerHeader_socialSecond_menu{
+
+}
+
+.BannerHeader_socialSecond_list{
+    position: absolute;
+    background-color: rgba(41,38,51,0.7);
+    right: 0;
+    top: 85px;
+    padding: 10px 45px;
+    border-radius: 25px;
+    width: 200px;
+}
+.BannerHeader_socialSecond_list ul{
+    padding: 0;
+    color: white;
+    list-style-type: none;
+}
+.BannerHeader_socialSecond_list ul li{
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 1064px){
+    .BannerHeader_info_list ul li p{
+        font-size: 18px;
+    }
+    .BannerHeader_info_list ul li{
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,111 @@
+.banner_hero{
+    background-image: url(/public/images/generealPhoto.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_hero_container{
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 65px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.banner_hero_title{
+    padding-top: 370px;
+    width: 100%;
+    max-width: 450px;
+}
+.banner_hero_title h1{
+    font-size: 50px;
+    color: white;
+    border-bottom: 3px solid red;
+    padding-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+.banner_hero_text{
+    width: 100%;
+    max-width: 500px;
+}
+.banner_hero_text p{
+    font-size: 25px;
+    color: #b5acac;
+    font-family: "Arial";
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.banner_order_button{
+    margin-top: 75px;
+    padding-bottom: 45px;
+}
+.banner_order_button button{
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.banner_order_button button:hover{
+    border-color: green;
+    background-color: green;
+
+}
+
+@media only screen and (max-width: 1200px){
+    .banner_hero_container{
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 908px){
+    .banner_hero_title h1{
+        font-size:40px;
+    }
+
+    .banner_hero_text{
+        max-width: 400px;
+    }
+    .banner_hero_text p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .banner_hero_container{
+        padding-left: 15px;
+    }
+
+    .banner_hero_title {
+        max-width: 243px;
+        padding-top: 150px;
+    }
+    .banner_hero_title h1{
+        font-size:30px;
+        line-height: 30px;
+    }
+    .banner_hero_text p{
+        font-size: 17px;
+    }
+    .banner_hero_text{
+        max-width: 300px;
+    }
+
+    .banner_order_button {
+        margin-top: 20px;
+    }
+    .banner_order_button button{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
