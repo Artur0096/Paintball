@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebookF,faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { useState, useEffect } from 'react';
 import { Divide as Hamburger } from "hamburger-react";
-import { Routes, Route, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 const BannerHeader = () =>{
     const [isOpen, setOpen] = useState(false)
     const [windowSize, setWindowSize] = useState([

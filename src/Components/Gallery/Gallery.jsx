@@ -42,8 +42,6 @@ function Slider2(){
 const AnimatedNavbar = makeAnimationSlideUpDown(Slider);
 const AnimatedNavbar2 = makeAnimationSlideUpDown(Slider2);
 const Gallery = () =>{
-   
-    const [toggler, setToggler] = useState(false);
     const [games,setGames] = useState(true)
     const [ware, setWare] = useState(false)
 

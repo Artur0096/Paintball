@@ -5,12 +5,10 @@ import Games from "../Games/Games"
 import styles from "./Navbar.module.css"
 import { Routes, Route, NavLink } from "react-router-dom"
 import React, { useEffect,useState } from "react"
-import { Divide as Hamburger } from "hamburger-react";
 
 
 const NavBar = () =>{
 
-    const [isOpen, setOpen] = useState(false)
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
       ]);

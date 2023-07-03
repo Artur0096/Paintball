@@ -15,7 +15,7 @@ function AnimatedVisibility({
       const delay = animationOutDuration - disappearOffset;
       setTimeout(() => setNoDisplay(true), delay);
     } else setNoDisplay(false);
-  }, [visible]);
+  }, [visible,animationOutDuration,disappearOffset]);
 
   const style = noDisplay ? { display: "none" } : null;
   return (
