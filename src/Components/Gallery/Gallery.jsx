@@ -1,20 +1,86 @@
 import styles from "./Gallery.module.css"
-import { galeryObj } from "./galleryObj"
+import { galeryObj, galeryObj2 } from "./galleryObj"
 import React, {useState} from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown,faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import {makeAnimationSlideUpDown} from "./AnimatedVisibility";
 
+
+
+
+function Slider(){
+    return(
+        <div className={styles.slider_Style}>   
+                    
+        <ImageGallery
+        items={galeryObj}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        />
+</div>
+    )
+}
+function Slider2(){
+    return(
+        <div className={styles.slider_Style}>            
+        <ImageGallery
+        items={galeryObj2}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        />
+</div>
+    )
+}
+const AnimatedNavbar = makeAnimationSlideUpDown(Slider);
+const AnimatedNavbar2 = makeAnimationSlideUpDown(Slider2);
 const Gallery = () =>{
+   
+    const [toggler, setToggler] = useState(false);
+    const [games,setGames] = useState(true)
+    const [ware, setWare] = useState(false)
+
+    const gamesHandleChange = () =>{
+        setGames(!games)
+    }
+    const wareHandleChange = () =>{
+        setWare(!ware)
+    }
+
     return(
         <div className={styles.gallery}>
-            <ImageGallery
-            items={galeryObj}
-            showPlayButton={true}
-            showFullscreenButton={true}
-            slideInterval={3000}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-        />
+            <div>
+                <div className={styles.gallery_gamesLine}>
+                    <h1 onClick={gamesHandleChange}>խաղեր</h1>
+                    {!games ?
+                    <FontAwesomeIcon onClick={gamesHandleChange} icon={faAngleDown} style={{color: "#fafcff", cursor: "pointer"}} size="2xl"/>
+                    :
+                    <FontAwesomeIcon onClick={gamesHandleChange} icon={faAngleUp} style={{color: "#fafcff", cursor: "pointer"}} size="2xl"/>
+                    }
+                </div>
+                <AnimatedNavbar2 open={games} />
+               
+            </div>
+            
+            
+            <div>
+                <div className={styles.gallery_Ware}>
+                    <h1 onClick={wareHandleChange}>հանդերձանք</h1>
+                    {!ware ?
+                    <FontAwesomeIcon onClick={wareHandleChange} icon={faAngleDown} style={{color: "#fafcff", cursor: "pointer"}} size="2xl"/>
+                    :
+                    <FontAwesomeIcon onClick={wareHandleChange} icon={faAngleUp} style={{color: "#fafcff", cursor: "pointer"}} size="2xl"/>
+                    }
+                </div>
+                <AnimatedNavbar open={ware} />
+            </div>
       </div>
     )
 

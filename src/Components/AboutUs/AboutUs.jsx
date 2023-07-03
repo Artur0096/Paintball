@@ -45,10 +45,7 @@ const AboutUs = () =>{
                         </div>
                         <div className={styles.aboutUs_text}>
                             <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                               has been the industry's standard dummy text ever since the 1500s, when an unknown
-                               printer took a galley of type and scrambled it to make a type specimen book. It
-                               has survived not only five centuries, but also the leap into electronic.
+                            <span>ArmPaintball</span> ռազմախաղային ակումբը հիմնադրվել է 2021 թ-ին 3 ընկերների կողմից: Իրականացրել ենք մեր պատանեկության երազանքը՝ ստեղծելով մի ակումբ, որը կօգնի երիտասարդներին և ոչ միայն գտնել ժամանցի օրգինալ և այլընտրանքային տարբերակ: Մեր նպատակն է Հայաստանում ունենալ միջազգային ստանդարտներին համապատասխանող Paintball ակումբ: Մեր հաճախորդներին ենք առաջարկում նորագույն ռազմամաթերք:
                             </p>
                         </div>
                         <div className={styles.aboutUs_reasons}>

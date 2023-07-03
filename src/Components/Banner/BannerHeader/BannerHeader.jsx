@@ -35,13 +35,7 @@ const BannerHeader = () =>{
                                 <li>
                                     <img src="/images/phone.png" alt="phone" />
                                     <div>
-                                        <p>05555555</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="/images/location.png" alt="location" />
-                                    <div>
-                                        <p>asdasdasd</p>
+                                        <p>(+374)43-20-12-20</p>
                                     </div>
                                 </li>
                                 <li>
@@ -55,8 +49,8 @@ const BannerHeader = () =>{
                     </div>:null}
                     {windowSize > 805?
                     <div className={styles.BannerHeader_social}>
-                        <FontAwesomeIcon icon={faFacebookF} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 11px", marginRight: "15px", cursor:"pointer"}}/>
-                        <FontAwesomeIcon icon={faInstagram} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 8px", cursor: "pointer"}}/>
+                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100083294514819&mibextid=LQQJ4d"><FontAwesomeIcon icon={faFacebookF} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 11px", marginRight: "15px", cursor:"pointer"}}/></a>
+                        <a target="_blank" rel="noreferrer" href="https://instagram.com/armpaintball?igshid=MzRlODBiNWFlZA=="><FontAwesomeIcon icon={faInstagram} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 8px", cursor: "pointer"}}/></a>
                     </div>
                     :
                     <div className={styles.BannerHeader_socialSecond}>

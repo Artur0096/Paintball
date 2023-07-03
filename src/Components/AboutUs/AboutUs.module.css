@@ -129,6 +129,13 @@
     height: 80px;
     padding-left: 15px;
 }
+.aboutUs_text span{
+    color: rgb(221, 60, 77);
+   text-transform: uppercase;
+   line-height: 5px;
+   font-size: 27px;
+   font-style: italic;
+}
 .aboutUs_form textarea::placeholder{
     text-align: center;
     padding-top: 22px;

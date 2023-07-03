@@ -7,9 +7,9 @@ const Games = () =>{
 
     const [plan,] = useState(
         [
-            {id:1, plan:"Sandard Plan", price: 39},
-            {id:2, plan:"Golden Plan", price: 69},
-            {id:3, plan:"Platinum Plan", price: 99},
+            {id:1, plan:"Sandard Plan", price: 7000},
+            {id:2, plan:"Golden Plan", price: 9000},
+            {id:3, plan:"Platinum Plan", price: 11000},
         ]
     )
     return(
@@ -22,8 +22,8 @@ const Games = () =>{
                         <div className={styles.block_header}>
                             <h3>{val.plan}</h3>
                         </div>
-                        <div className={styles.block_price} style = { val.price ===69 ? { backgroundColor:'#E43D4E'} : (val.price ===99)? {backgroundColor:'#AED13B'} : {}}>
-                            <span>$</span><h2>{val.price}</h2><span>99</span>
+                        <div className={styles.block_price} style = { val.price ===9000 ? { backgroundColor:'#E43D4E'} : (val.price ===11000)? {backgroundColor:'#AED13B'} : {}}>
+                            <h2>{val.price}</h2>
                         </div>
                         <div className={styles.block_features}>
                             <div className={styles.features_list}>

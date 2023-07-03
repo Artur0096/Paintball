@@ -15,7 +15,7 @@ const Contacts = () =>{
                         <h2>կոնտակտներ</h2>
                         <iframe 
                             title="This is a unique title" 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.9331128666213!2d44.48061271190901!3d40.188301971358214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd0a419b32c9%3A0x61373599a8c3300f!2sKaren%20Demirtchian%20Sport%2FConcert%20Complex!5e0!3m2!1sru!2sam!4v1681989733491!5m2!1sru!2sam"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3381.624361147601!2d44.62035980879353!3d40.181810880166395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDEwJzU3LjIiTiA0NMKwMzcnMTQuMiJF!5e1!3m2!1sru!2sam!4v1687337778379!5m2!1sru!2sam"
                             width="450" 
                             height="300" 
                             allowFullScreen="" 
@@ -29,7 +29,7 @@ const Contacts = () =>{
                             </div>
                             <div>
                                 <FontAwesomeIcon icon={faPhone} style={{color: "#ff0000", fontSize: "25px", marginRight:"15px"}}/>
-                                <span>(+374)77-77-77-77</span>
+                                <span>(+374)43-20-12-20</span>
                             </div>
                             <div>
                                 <FontAwesomeIcon icon={faEnvelope} style={{color: "#ff0000", fontSize: "25px", marginRight:"15px"}}/>
@@ -58,8 +58,8 @@ const Contacts = () =>{
                             <h2>հետեվեք մեզ</h2>
                             <div className={styles.social_network_icons}>
                                 <ul>
-                                    <li><FontAwesomeIcon icon={faFacebookF} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 11px", marginRight: "15px", cursor:"pointer"}}/></li>
-                                    <li><FontAwesomeIcon icon={faInstagram} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 8px", marginRight: "15px", cursor:"pointer"}}/></li>
+                                    <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100083294514819&mibextid=LQQJ4d"><FontAwesomeIcon icon={faFacebookF} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 11px", marginRight: "15px", cursor:"pointer"}}/></a></li>
+                                    <li><a target="_blank" rel="noreferrer" href="https://instagram.com/armpaintball?igshid=MzRlODBiNWFlZA=="><FontAwesomeIcon icon={faInstagram} size="lg" style={{color:"white", border: "2px solid white", borderRadius:"50%", padding:"7px 8px", marginRight: "15px", cursor:"pointer"}}/></a></li>
                                 </ul>
                             </div>
                         </div>
