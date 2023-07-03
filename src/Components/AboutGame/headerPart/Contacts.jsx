@@ -25,7 +25,7 @@ const Contacts = () =>{
                         <div className={styles.adrees_info_lines}>
                             <div className={styles.adrees_str}>
                                 <FontAwesomeIcon icon={faEarthAmericas} style={{color: "#ff0000", fontSize: "25px", marginRight:"15px"}} />
-                                <span>Karen Demirtchian Sport/Concert Complex</span>
+                                <span>Ջրվեժ</span>
                             </div>
                             <div>
                                 <FontAwesomeIcon icon={faPhone} style={{color: "#ff0000", fontSize: "25px", marginRight:"15px"}}/>
@@ -33,7 +33,7 @@ const Contacts = () =>{
                             </div>
                             <div>
                                 <FontAwesomeIcon icon={faEnvelope} style={{color: "#ff0000", fontSize: "25px", marginRight:"15px"}}/>
-                                <span>paintball@support.com</span>
+                                <span>armpaintball@gmail.com</span>
                             </div>
                         </div>
                         </div>
