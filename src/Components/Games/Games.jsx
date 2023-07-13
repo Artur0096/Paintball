@@ -23,7 +23,7 @@ const Games = () =>{
                             <h3>{val.plan}</h3>
                         </div>
                         <div className={styles.block_price} style = { val.price ===9000 ? { backgroundColor:'#E43D4E'} : (val.price ===11000)? {backgroundColor:'#AED13B'} : {}}>
-                            <h2>{val.price}</h2>
+                            <h2>{val.price}</h2><span>AMD</span>
                         </div>
                         <div className={styles.block_features}>
                             <div className={styles.features_list}>
