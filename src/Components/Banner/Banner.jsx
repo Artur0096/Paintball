@@ -13,7 +13,7 @@ const Banner = () =>{
                     <h1>ժամանակն է սկսել խաղը</h1>
                 </div>
                 <div className={styles.banner_hero_text}>
-                    <p>Մենք կապահովենք ձեր ուրախ ժամանցը և այլն և այլն</p>
+                    <p>Մենք կապահովենք  ձեր ուրախ և  էքստրեմալ ժամանցը</p>
                 </div>
                 <div className={styles.banner_order_button}>
                     <Link to="/">

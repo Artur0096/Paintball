@@ -1,5 +1,6 @@
 import styles from "./Games.module.css"
 import React,{useState} from "react"
+import { Link } from "react-router-dom"
 
 
 
@@ -28,13 +29,13 @@ const Games = () =>{
                         <div className={styles.block_features}>
                             <div className={styles.features_list}>
                                 <ul>
-                                    <li>Feature 1</li>
-                                    <li>Feature 2</li>
-                                    <li>Feature 3</li>
+                                    <li>{val.price === 7000 ? "100 գնդակ" : val.price === 9000? "200 գնդակ" : "300 գնդակ"}</li>
+                                    <li>{val.price === 7000 ? "հանդերձանք" : val.price === 9000? "հանդերձանք, 2 ատրճանակ" : "հանդերձանք, 2 ատրճանակ, 2 ծխեցման նռնակ"}</li>
+                                    <li>Հյուրասիրություն</li>
                                 </ul>
                             </div>
                             <div className={styles.block_features_button}>
-                                <button>BOOK NOW!</button>
+                                <Link to="/"><button>BOOK NOW!</button></Link>
                             </div>
                         </div>
                     </div>
