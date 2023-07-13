@@ -55,6 +55,7 @@
 }
 .features_list{
     padding-top: 45px;
+    max-height: 245px;
 }
 .features_list ul{
     margin: 0;
